@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+iframe {
+	border: 0;
+	width: 100%;
+	padding: 0;
+	height: 200px;
+	border: 0;
+}
+
+h2{
+	color: #ff0780;
+}
+
+.bg {
+	float: right;
+	position: absolute;
+	left: 70%;
+	padding-top: 40px;
+}
+
+.resumo {
+	text-align: justify;
+	padding: 60px;
+	font-size: 20px;
+	font-family: 'PT Sans Narrow', sans-serif;
+	float: left;
+	width: 50%;
+	padding-left: 150px;
+}
+
+@media (max-width: 900px) {
+	iframe {
+		height: 200px;
+	}
+	.resumo {
+		text-align: justify;
+		padding: 15px;
+		font-size: 15px;
+		padding-top: 0;
+		width: 95%;
+	}
+	.bg {
+		display: none;
+	}
+}
