@@ -19,6 +19,10 @@ iframe {
   font-weight: 900;
 }
 
+body{
+	background-color: #ffd6e1;
+}
+
 tbody {
   text-align-last: center;
 }
