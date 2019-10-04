@@ -1,6 +1,5 @@
 function nome() { 
-  var nome = prompt("Qual o seu nome?", 
-      "Digite aqui o seu nome"); 
+  var nome = prompt("Qual o seu nome?"); 
   if (nome != null) { 
       document.getElementById("nome").innerHTML = 
           "<h2>Vamos começar a jogar, " + nome + "</h2>"; 
@@ -106,8 +105,12 @@ function embaralhar (lista) {
       setTimeout(() => {
         contwinner++;
         document.getElementById("acertos").innerHTML = "<h2>Acertos:" + contwinner + " Tentativas: " + clique + "</h2>"; 
-        if (contwinner == 8){
-          alert("Parabéns! Você venceu essa partida!");
+        if (contwinner == 12){
+          alert("Parabéns! Você venceu essa partida! Sua porcentagem de acertos: "+ clique/contwinner + "%");
+          var refresh = confirm ("Deseja jogar uma nova partida?");
+          if (refresh == true){
+            window.location.reload();
+          }
           parar();
         } else {
           alert("+1 acerto");
@@ -126,7 +129,7 @@ function embaralhar (lista) {
   let cartaUm;
   let cartaDois;
   
-  let imagensSalvas = [ "w.jpg", "ws1.jpg", "ws2.jpg", "ws3.jpg", "ws4.jpg", "ws5.jpg", "ws6.jpg", "ws7.jpg"];
+  let imagensSalvas = [ "w.jpg", "ws1.jpg", "ws2.jpg", "ws3.jpg", "ws4.jpg", "ws5.jpg", "ws6.jpg", "ws7.jpg", "ws8.jpg", "ws9.jpg", "ws10.jpg", "ws11.jpg"];
   let imagens = imagensSalvas.concat(imagensSalvas);
   
   imagens = embaralhar(imagens);
